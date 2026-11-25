@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Treenest – A Beginner's Guide to Backyard Birds, Nest Boxes and Bird-Friendly Gardens</title>
+<meta name="description" content="Treenest is an educational guide to backyard birds: how to make a garden welcoming for birds, how nest boxes work, how to feed birds responsibly and how to start birdwatching.">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%A6%3C/text%3E%3C/svg%3E">
+<style>
+:root{--sky:#2f6f8f;--skyd:#1d4a61;--sky1:#e6f1f6;--twig:#6b4a2f;--sun:#f2b632;--cream:#fffcf5;--ink:#212b30;--mut:#59666c;--w:#fff;--moss:#5a7d3a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Verdana','Segoe UI',Tahoma,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.8;font-size:17px}
+h1,h2,h3,.tag,.btn{font-family:'Georgia','Times New Roman',serif}
+a{color:var(--sky)}
+img{max-width:100%;display:block}
+.wrap{width:100%;max-width:1220px;margin:0 auto;padding:0 26px}
+header{background:var(--w);border-bottom:1px solid #e2dccb;position:sticky;top:0;z-index:10}
+header .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;padding-top:14px;padding-bottom:14px}
+.logo{font:700 27px Georgia,serif;color:var(--skyd);text-decoration:none}
+.logo b{color:var(--sun);text-shadow:0 0 1px #b98300}
+nav a{color:var(--skyd);text-decoration:none;margin-left:20px;font-size:14.5px}
+nav a:hover{color:var(--twig)}
+.hero{position:relative;background:#7da6bc url('https://images.unsplash.com/photo-1444464666168-49d633b86797?auto=format&fit=crop&w=1800&q=70') center/cover}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,55,75,.55),rgba(20,55,75,.8))}
+.hero .wrap{position:relative;padding-top:120px;padding-bottom:120px;text-align:center;color:#fff}
+.tag{display:inline-block;background:var(--sun);color:#3a2a00;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;padding:6px 18px;border-radius:30px;margin-bottom:22px;font-weight:700}
+h1{font-size:clamp(33px,5vw,56px);line-height:1.15;max-width:880px;margin:0 auto 20px;font-weight:700}
+.hero p{max-width:700px;margin:0 auto 32px;font-size:19.5px;color:#e5f0f5}
+.btn{display:inline-block;background:var(--sun);color:#3a2a00;text-decoration:none;font-weight:700;padding:14px 32px;border-radius:30px;font-size:16px}
+.btn:hover{background:#ffc94a}
+section{padding:80px 0}
+.white{background:var(--w)}
+.sky{background:var(--sky1)}
+.twig{background:var(--twig);color:#f4e9dc}
+.twig h2,.twig h3{color:#fff}
+h2{font-size:clamp(27px,3.4vw,38px);line-height:1.22;color:var(--skyd);margin-bottom:18px}
+h3{font-size:20px;color:var(--sky);margin:4px 0 8px}
+.lead{max-width:800px;color:var(--mut);font-size:18.5px;margin-bottom:34px}
+.c{text-align:center}
+.c .lead{margin-left:auto;margin-right:auto}
+p+p{margin-top:15px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+.duo img{width:100%;height:430px;object-fit:cover;border-radius:50% 50% 12px 12px/30% 30% 12px 12px;background:#aac6d4}
+.duo.rev img{order:-1}
+.needs{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.need{background:var(--w);border-radius:12px;padding:24px 18px;text-align:center;box-shadow:0 3px 14px rgba(29,74,97,.1);border-bottom:5px solid var(--sun)}
+.need .e{font-size:34px;display:block;margin-bottom:6px}
+.need h3{font-size:18px}
+.need p{font-size:15px;color:var(--mut);line-height:1.62}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{background:var(--w);border-radius:12px;overflow:hidden;box-shadow:0 3px 16px rgba(29,74,97,.12)}
+.card img{width:100%;height:215px;object-fit:cover;background:#aac6d4}
+.card div{padding:22px}
+.card p{font-size:15.5px;color:var(--mut);line-height:1.7}
+.rules{display:grid;grid-template-columns:repeat(2,1fr);gap:20px 44px}
+.rule{border-bottom:1px solid rgba(255,255,255,.22);padding-bottom:16px}
+.rule p{font-size:16px;color:#ecdcc8;line-height:1.7}
+.watch{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.w{background:var(--w);border-radius:12px;padding:24px 20px;box-shadow:0 2px 12px rgba(29,74,97,.09)}
+.w b{display:block;font:700 30px Georgia,serif;color:var(--sun);text-shadow:0 0 1px #b98300;line-height:1;margin-bottom:8px}
+.w p{font-size:15.5px;color:var(--mut);line-height:1.66}
+.faq{max-width:900px;margin:0 auto}
+.faq details{background:var(--w);border-left:5px solid var(--sun);border-radius:6px;padding:17px 22px;margin-bottom:13px;box-shadow:0 2px 9px rgba(29,74,97,.08)}
+.faq summary{cursor:pointer;font:700 17.5px Georgia,serif;color:var(--skyd)}
+.faq p{margin-top:11px;color:var(--mut);font-size:16px}
+.disc{background:#fff6df;border:1px solid #ecd49a;border-radius:10px;padding:28px 30px}
+.disc h2{font-size:23px;margin-bottom:10px}
+.disc p{font-size:15.5px;color:#4b4226;line-height:1.7}
+footer{background:#14323f;color:#b4cdd8;padding:46px 0 30px;font-size:15px}
+footer a{color:#e4f1f6;margin-right:20px}
+footer p{margin-top:14px;max-width:900px;line-height:1.6}
+@media(max-width:960px){.duo,.needs,.cards,.rules,.watch{grid-template-columns:1fr}.duo img{height:290px}.duo.rev img{order:0}.hero .wrap{padding-top:70px;padding-bottom:70px}section{padding:54px 0}nav a{margin:0 14px 0 0}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a class="logo" href="#top">Tree<b>nest</b></a>
+<nav>
+<a href="#why">Why birds</a>
+<a href="#needs">Bird needs</a>
+<a href="#nestbox">Nest boxes</a>
+<a href="#feeding">Feeding</a>
+<a href="#watching">Birdwatching</a>
+<a href="#faq">FAQ</a>
+</nav>
+</div>
+</header>
+
+<main id="top">
+
+<div class="hero">
+<div class="wrap">
+<span class="tag">Backyard Bird Guide</span>
+<h1>Treenest: Welcome Birds to Your Garden, Balcony and Neighbourhood</h1>
+<p>Birds bring song, colour and movement to everyday life. Treenest explains in simple terms what birds need, how nest boxes work, how to feed birds responsibly and how to begin watching them.</p>
+<a class="btn" href="#why">Start Exploring</a>
+</div>
+</div>
+
+<section class="white" id="why">
+<div class="wrap duo">
+<div>
+<h2>Why Birds Make a Garden Come Alive</h2>
+<p>Few things change a small outdoor space as quickly as the arrival of birds. A sparrow hopping across a fence, a robin on a spade handle or a flash of colour in the branches turns an ordinary morning into something worth noticing.</p>
+<p>Birds are also useful neighbours. Many species eat insects, helping keep garden pests in balance, and some spread seeds as they feed. Watching them is a gentle way to learn how seasons, weather and habitat connect, and it is an activity that people of any age can enjoy.</p>
+<p>The good news is that you do not need acres of land to help. Even a balcony with a few plants and a shallow dish of fresh water can offer something to passing birds. Treenest gathers the basics so you can start small and build from there.</p>
+</div>
+<img src="https://images.unsplash.com/photo-1452570053594-1b985d6ea890?auto=format&fit=crop&w=1000&q=70" alt="A small bird perched on a branch" width="1000" height="430" loading="lazy">
+</div>
+</section>
+
+<section class="sky" id="needs">
+<div class="wrap c">
+<h2>The Five Things Every Bird Looks For</h2>
+<p class="lead">Birds choose a place based on a handful of basic needs. If you can provide even a few, your space becomes more welcoming.</p>
+<div class="needs" style="text-align:center">
+<div class="need"><span class="e">🌾</span><h3>Food</h3><p>Seeds, berries, nectar and insects, depending on the species. A mix of plants offers natural food through the year.</p></div>
+<div class="need"><span class="e">💧</span><h3>Water</h3><p>A shallow, clean dish for drinking and bathing is often more attractive than food, especially in hot or freezing weather.</p></div>
+<div class="need"><span class="e">🌿</span><h3>Shelter</h3><p>Dense shrubs, hedges and trees give cover from weather and from predators.</p></div>
+<div class="need"><span class="e">🪺</span><h3>Nesting Places</h3><p>Branches, natural cavities, climbing plants and nest boxes all offer spots to raise young.</p></div>
+<div class="need"><span class="e">🛡️</span><h3>Safety</h3><p>Quiet corners, fewer hazards and protection from window strikes and roaming pets help birds stay.</p></div>
+</div>
+</div>
+</section>
+
+<section class="white" id="garden">
+<div class="wrap">
+<h2>Making a Bird-Friendly Garden</h2>
+<p class="lead">Small changes to how a garden is planted and managed can make a surprising difference.</p>
+<div class="cards">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1486365227551-f3f90034a57c?auto=format&fit=crop&w=800&q=70" alt="A bird sitting on a tree branch among green leaves" width="800" height="215" loading="lazy">
+<div><h3>Plant in Layers</h3><p>Combine tall trees, medium shrubs and low plants. Different layers give different birds places to feed, hide and sing. Choose native species where possible, as local insects and birds are used to them.</p></div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1480044965905-02098d419e96?auto=format&fit=crop&w=800&q=70" alt="A colourful bird on a natural perch" width="800" height="215" loading="lazy">
+<div><h3>Offer Berries and Seeds</h3><p>Shrubs that produce berries and flowers that set seed provide food in autumn and winter. Letting some seed heads stand through the cold months gives birds natural snacks.</p></div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1551085254-e96b210db58a?auto=format&fit=crop&w=800&q=70" alt="A small bird visiting a garden" width="800" height="215" loading="lazy">
+<div><h3>Go Easy on Chemicals</h3><p>Insecticides reduce the insects that many birds, especially chicks, depend on. Reducing or avoiding chemical use and tolerating a few leaf holes supports a healthier food chain.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="twig" id="nestbox">
+<div class="wrap">
+<h2>Nest Boxes: How to Use Them Well</h2>
+<p class="lead" style="color:#ecdcc8">A nest box is a substitute for a natural tree hollow. Used thoughtfully, it can give small birds a safe place to raise a family.</p>
+<div class="rules">
+<div class="rule"><h3>Match the box to the bird</h3><p>Different species prefer different entrance hole sizes and box designs. Check reliable local guidance, such as a regional bird or wildlife organisation, for the right design for the birds in your area.</p></div>
+<div class="rule"><h3>Choose a calm location</h3><p>Place the box on a tree, post or wall, away from strong sun, heavy rain exposure and busy foot traffic. A gentle tilt forward helps keep rain out.</p></div>
+<div class="rule"><h3>Think about predators</h3><p>Position the box where cats and other climbing predators cannot easily reach. Avoid perches below the entrance, which can help predators more than birds.</p></div>
+<div class="rule"><h3>Use natural materials</h3><p>Untreated wood with drainage and ventilation holes is a common choice. Avoid harsh paints or preservatives on the inside.</p></div>
+<div class="rule"><h3>Put it up in good time</h3><p>Install boxes before the local breeding season starts, often late winter or early spring in temperate regions.</p></div>
+<div class="rule"><h3>Leave nests undisturbed</h3><p>Avoid opening boxes during nesting. In many places it is illegal to disturb active nests. Clean out old material after the season has ended, following local advice.</p></div>
+</div>
+</div>
+</section>
+
+<section class="white" id="feeding">
+<div class="wrap duo rev">
+<img src="https://images.unsplash.com/photo-1591608971362-f08b2a75731a?auto=format&fit=crop&w=1000&q=70" alt="A bird feeding in a garden setting" width="1000" height="430" loading="lazy">
+<div>
+<h2>Feeding Birds Responsibly</h2>
+<p>Feeding is a popular way to see birds up close, but it works best when done with care. Different birds enjoy different foods, so a variety of suitable seed, nuts or other bird-specific foods will attract a wider range of visitors. Look for foods labelled for wild birds and store them dry.</p>
+<p>Hygiene matters. Dirty feeders can spread disease between birds, so clean feeders and water dishes regularly with warm water, rinse well and let them dry. Wash your hands after handling them. If you notice sick or dead birds, stop feeding for a while and follow local wildlife health guidance.</p>
+<p>Place feeders where birds feel safe, near cover but not so close that predators can ambush. Offer only what birds will eat in a day or two, and tidy up spilled food to avoid attracting pests.</p>
+</div>
+</div>
+</section>
+
+<section class="sky" id="watching">
+<div class="wrap">
+<h2 class="c">Birdwatching for Beginners</h2>
+<p class="lead c">You can start with nothing more than your eyes and a little patience. These four habits help.</p>
+<div class="watch">
+<div class="w"><b>01</b><h3>Go Early</h3><p>Birds are often most active in the first hours after sunrise, when they feed and sing the most.</p></div>
+<div class="w"><b>02</b><h3>Sit Quietly</h3><p>Move slowly and stay still. Birds relax when they feel safe, and many will return within minutes.</p></div>
+<div class="w"><b>03</b><h3>Look for Clues</h3><p>Note size, shape, colour, beak, how it moves and what it sounds like. These details help identify a species.</p></div>
+<div class="w"><b>04</b><h3>Keep Notes</h3><p>Write down what you see, with the date and place. A simple list becomes a personal record of the seasons.</p></div>
+</div>
+<p style="max-width:820px;margin-top:30px;color:var(--mut)">As you grow more interested, a pair of binoculars and a regional field guide or a reputable identification app can be helpful. Always keep a respectful distance from birds and nests, and never chase or disturb wildlife for a better view.</p>
+</div>
+</section>
+
+<section class="white" id="faq">
+<div class="wrap faq">
+<h2 class="c" style="text-align:center">Frequently Asked Questions</h2>
+<details><summary>What is Treenest?</summary><p>Treenest is an informational website that provides general educational content about backyard birds, bird-friendly gardens, nest boxes and birdwatching.</p></details>
+<details><summary>Can I attract birds if I only have a balcony?</summary><p>Often, yes. Containers with native plants, a shallow dish of fresh water and, where allowed, a clean feeder can help. Check any rules from your building or local authority.</p></details>
+<details><summary>Why aren't birds visiting my feeder?</summary><p>It can take days or weeks for birds to find a new feeder. Location, food type, nearby cover, cats and noise all play a part. Patience and small adjustments usually help.</p></details>
+<details><summary>When should I put up a nest box?</summary><p>Usually before the local breeding season starts, but timing varies by region and species. Local wildlife organisations can give advice for your area.</p></details>
+<details><summary>Is it okay to touch a baby bird I find on the ground?</summary><p>Many young birds that appear abandoned are fledglings still being cared for by their parents. Unless the bird is clearly injured or in danger, observe from a distance and, if unsure, contact a local wildlife rehabilitator or animal helpline.</p></details>
+<details><summary>Does Treenest sell bird feeders, nest boxes or products?</summary><p>No. This page is an educational guide only and does not sell products or services.</p></details>
+</div>
+</section>
+
+<section class="sky">
+<div class="wrap">
+<div class="disc" id="disclaimer">
+<h2>Disclaimer</h2>
+<p>The information on this page is provided for general educational and informational purposes only. Bird behaviour, species and legal protections vary by region, season and individual circumstances, and Treenest makes no guarantee that any action will attract or benefit particular birds. Nothing here is professional ornithological, veterinary, wildlife-rescue, legal or medical advice. Wild birds can carry diseases, so practise good hygiene and wash your hands after handling feeders, nest boxes or bird droppings. Many birds, nests and eggs are legally protected, and disturbing them may be against the law where you live. Always follow local wildlife regulations and consult local experts for specific questions. Images are used for illustration only. Any third-party names mentioned belong to their respective owners. You use this information at your own discretion and risk. Please also read our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms &amp; Conditions</a>.</p>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="wrap">
+<strong style="color:#fff;font-size:20px;font-family:Georgia,serif">Treenest</strong>
+<p><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a><a href="#disclaimer">Disclaimer</a></p>
+<p>&copy; 2026 Treenest. All rights reserved. This website provides general educational information about backyard birds and nature and does not sell products or services.</p>
+</div>
+</footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"Treenest – A Beginner's Guide to Backyard Birds","description":"Educational guide to bird-friendly gardens, nest boxes, responsible feeding and birdwatching for beginners.","inLanguage":"en"}
+</script>
+</body>
+</html>
